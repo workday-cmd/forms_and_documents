@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="hrts">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRTS DOCS</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-controller="home as app">
+    <header>
+      <nav>
+        <div class="nav-wrapper">
+          <a target="_blank"href="#" class="brand-logo center">Workday Service Now Forms</a>
+        </div>
+      </nav>  
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row card-container">
+            <div class="col l12 m12 s12 form-link-container">
+              <h2 class="center-align">Forms</h2>
+              <ul class="collapsible expandable forms">
+                <li ng-repeat="form in app.forms">
+                  <div class="collapsible-header"><span class="material-icons-outlined list-icon">list</span>{{form.title}}</div>
+                  <div class="collapsible-body">
+                    <span class="list-description">{{form.description}}</span>
+                    <a class="waves-effect waves-light btn red" href="{{form.link}}" target="_blank">Open</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
