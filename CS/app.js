@@ -77,7 +77,7 @@ angular.module('hrts',[]).controller('home', function($http) {
       },
       {
           "title": "Workday Worker Data/Configuration Inquiry",
-          "link": "https://thermofisherit.service-now.com/hr?id=nr_hr_sc_cat_item&sys_id=a3f2a2601b4c0cd0f204315bcd4bcb3f",
+          "link": "https://thermofisherit.service-now.com/hr?id=nr_hr_sc_cat_item&sys_id=5b13b9ce1bb3bf00f204315bcd4bcbcf",
           "description": "Business Structure(Group, Division, BU, Sub-BU) Company Cost Center Holiday Calendar Job Profile Location Matrix Organization Nitification from WD (internal use only) Pay GroupPersonal Data Change Product Line Supervisory Organization Supplier WalkMe Workspend Work Shift"
       },
       {
